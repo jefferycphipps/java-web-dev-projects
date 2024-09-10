@@ -10,14 +10,16 @@ public class Area {
     do{
         System.out.println("Enter a radius:");
         radius = input.nextDouble();
+        //if (radius instanceof double)
+        //    System.out.println("This is not a number");
         if(radius<=0)
             System.out.println("Radius should be greater than zero");
-        
+
     }while (radius<=0);
     double area = Circle.getArea(radius);
 
     System.out.println("The area of the circle is " + area);
-
+    input.close();
 
 
 
